@@ -1,0 +1,38 @@
+{
+  "kind": "collectionType",
+  "collectionName": "links",
+  "info": {
+    "singularName": "link",
+    "pluralName": "links",
+    "displayName": "link",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "username": {
+      "type": "string"
+    },
+    "Link": {
+      "type": "string"
+    },
+    "person": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::person.person",
+      "inversedBy": "links"
+    },
+    "email": {
+      "type": "email"
+    },
+    "link_name": {
+      "type": "string"
+    },
+    "link_on": {
+      "type": "boolean",
+      "default": true
+    }
+  }
+}
