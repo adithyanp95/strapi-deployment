@@ -802,6 +802,7 @@ export interface ApiImageImage extends Schema.CollectionType {
       'oneToOne',
       'api::person.person'
     >;
+    cover_photo: Attribute.Media;
     createdAt: Attribute.DateTime;
     updatedAt: Attribute.DateTime;
     publishedAt: Attribute.DateTime;

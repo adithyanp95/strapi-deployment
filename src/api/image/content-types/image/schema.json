@@ -27,6 +27,13 @@
       "type": "relation",
       "relation": "oneToOne",
       "target": "api::person.person"
+    },
+    "cover_photo": {
+      "allowedTypes": [
+        "images"
+      ],
+      "type": "media",
+      "multiple": false
     }
   }
 }
