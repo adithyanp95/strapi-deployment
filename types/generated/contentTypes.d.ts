@@ -834,15 +834,15 @@ export interface ApiLinkLink extends Schema.CollectionType {
   };
   attributes: {
     username: Attribute.String;
-    Link: Attribute.String;
+    link: Attribute.String;
     person: Attribute.Relation<
       'api::link.link',
       'manyToOne',
       'api::person.person'
     >;
-    email: Attribute.Email;
     link_name: Attribute.String;
     link_on: Attribute.Boolean & Attribute.DefaultTo<true>;
+    link_text: Attribute.String;
     createdAt: Attribute.DateTime;
     updatedAt: Attribute.DateTime;
     publishedAt: Attribute.DateTime;

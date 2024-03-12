@@ -15,7 +15,7 @@
     "username": {
       "type": "string"
     },
-    "Link": {
+    "link": {
       "type": "string"
     },
     "person": {
@@ -24,15 +24,15 @@
       "target": "api::person.person",
       "inversedBy": "links"
     },
-    "email": {
-      "type": "email"
-    },
     "link_name": {
       "type": "string"
     },
     "link_on": {
       "type": "boolean",
       "default": true
+    },
+    "link_text": {
+      "type": "string"
     }
   }
 }
